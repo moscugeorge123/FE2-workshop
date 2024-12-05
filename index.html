@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link rel="stylesheet" href="/scss/header.css" />
+    <link rel="stylesheet" href="/scss/products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="col-md-6">
+          <input
+            class="form-control search-products"
+            placeholder="Search"
+            type="text"
+          />
+        </div>
+        <div class="header-items col-md-6">
+          <button class="btn btn-light header-item">
+            <span class="m-icon">shopping_cart</span>
+            <span>Cosul meu</span>
+          </button>
+          <a class="account" href="/pages/login.html">
+            <button class="btn btn-light header-item">
+              <i class="m-icon">person</i>
+              <span>Login</span>
+            </button>
+          </a>
+        </div>
+      </header>
+      <main class="row">
+        <div class="filters col-md-3">
+          <section class="categories">
+            <h4>Categories</h4>
+            <ul class="list list-group">
+              <div class="loading-container">
+                <div class="loading m-icon">sync</div>
+              </div>
+            </ul>
+          </section>
+          <section class="rating">
+            <h4>Rating</h4>
+            <ul class="ratings list-group">
+              <li class="list-group-item">
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+              </li>
+              <li class="list-group-item">
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+              </li>
+              <li class="list-group-item">
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+              </li>
+              <li class="list-group-item">
+                <span class="m-icon">kid_star</span>
+                <span class="m-icon">kid_star</span>
+              </li>
+              <li class="list-group-item">
+                <span class="m-icon">kid_star</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="products col-md-9">
+          <div class="row products-list">
+            <div class="loading-container">
+              <div class="loading m-icon">sync</div>
+            </div>
+          </div>
+          <div class="pagination">
+            <button class="back btn btn-light">
+              <i class="m-icon">arrow_back_ios</i>
+            </button>
+            <div class="pages">
+              <button class="btn btn-light">1</button>
+              <button class="btn btn-light">2</button>
+              <button class="btn btn-light">3</button>
+              <span>...</span>
+              <button class="btn btn-light">8</button>
+              <button class="btn btn-light">9</button>
+            </div>
+            <button class="forward btn btn-light">
+              <i class="m-icon">arrow_forward_ios</i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/api.js"></script>
+    <script src="/scripts/products.js"></script>
+  </body>
+</html>

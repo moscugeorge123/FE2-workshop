@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link rel="stylesheet" href="/scss/header.css" />
+    <link rel="stylesheet" href="/scss/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="header-items col-md-12">
+          <button class="btn btn-light header-item">
+            <span class="m-icon">shopping_cart</span>
+            <span>Cosul meu</span>
+          </button>
+          <a class="account" href="/pages/login.html">
+            <button class="btn btn-light header-item">
+              <i class="m-icon">person</i>
+              <span>Login</span>
+            </button>
+          </a>
+        </div>
+      </header>
+
+      <div class="row justify-content-center">
+        <div class="col-6 form">
+          <h2>Login form</h2>
+          <input
+            type="text"
+            placeholder="Username"
+            class="form-control"
+            name="username"
+          />
+          <span class="error"></span>
+
+          <input
+            type="password"
+            placeholder="password"
+            class="form-control"
+            name="password"
+          />
+          <span class="error"></span>
+          <button class="login-button btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/api.js"></script>
+    <script src="/scripts/auth.js"></script>
+  </body>
+</html>

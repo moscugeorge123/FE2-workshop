@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(input) {
+    margin-bottom: 0.25rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .error {
+    color: red;
+    display: block;
+    min-height: 1.5rem;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}

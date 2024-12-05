@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form > *:not(input) {
+  margin-bottom: 0.25rem;
+}
+.form h2 {
+  margin-bottom: 1.5rem;
+}
+.form .error {
+  color: red;
+  display: block;
+  min-height: 1.5rem;
+}
+.form button {
+  align-self: flex-end;
+}/*# sourceMappingURL=login.css.map */

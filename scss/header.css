@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+header .header-item {
+  display: flex;
+  align-items: center;
+}
+header .header-items {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}/*# sourceMappingURL=header.css.map */

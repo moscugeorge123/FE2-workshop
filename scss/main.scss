@@ -1,0 +1,47 @@
+@import "./icons";
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+  -webkit-border-radius: 1ex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.loading {
+  font-size: 42px;
+  animation: spin 2s linear infinite;
+  user-select: none;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

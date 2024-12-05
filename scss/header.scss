@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+  .header-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-items {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
